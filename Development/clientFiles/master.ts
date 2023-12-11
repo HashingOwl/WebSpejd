@@ -316,6 +316,9 @@ namespace Client{
                 }
             }
         } 
+        export namespace redigerPPM{
+            
+        }
         //Namespace for handling sending and recieving updates from server
         //Put functions to run at every update within callback funciton in SendRequest()
         namespace updates {

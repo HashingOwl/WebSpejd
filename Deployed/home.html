@@ -15,14 +15,16 @@
 <body onload="Client.Home.onLoadFunction()">
     <div class="bg">
         <img width="240" height="240" src="images/logo.png" decoding="async" sizes="(max-width: 240px) 85vw, 240px">
-        <h1 class="header" style="margin-top: -20%;">CCMR </h1>
+    </div>
+    <div class="content">
+        <h1 class="header" style="margin-top: 5px;">CCMR </h1>
         <h1 class="header">WebSpejd </h1>
         <div
-            style="width: 700px; height: 1200px; opacity: 80%; background-color: #000000; margin: auto; margin-top: auto;">
+            style="width: 700px; height: 600px; opacity: 80%; background-color: #000000; margin: auto; margin-top: auto;">
             <h2 style="color: white; opacity: 100%;">Log ind med dit udleverede login</h2>
             <p>Kode</p>
             <input value="post1" type="text" id="kode" onfocus="Client.Home.codeChanged()">
-
+    
             <button id="button" onclick="Client.Home.loginClicked(false)">Log ind med kode</button>
             <button id="loginInMandskab" onclick="location.assign('/mandskab')" disabled>Log ind med gemt mandskabsbruger</button>
             <button id="loginInMaster" onclick="location.assign('/master')" disabled>Log ind med gemt masterbruger</button>
